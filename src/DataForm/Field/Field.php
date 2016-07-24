@@ -307,7 +307,7 @@ abstract class Field extends Widget
                 }
 
             } else {
-                $this->value = HTML::xssfilter(Input::get($this->name));
+                $this->value = Input::get($this->name);
             }
             $this->is_refill = true;
 
